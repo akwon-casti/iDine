@@ -29,9 +29,32 @@
 		CEB6117D2F0C939C006836F7 /* iDineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iDineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CEB6127B2F0C93EB006836F7 /* Exceptions for "iDine" folder in "iDine" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				iDineUITests.swift,
+				iDineUITestsLaunchTests.swift,
+			);
+			target = CEB611652F0C939A006836F7 /* iDine */;
+		};
+		CEB6127C2F0C93EB006836F7 /* Exceptions for "iDine" folder in "iDineUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				iDineUITests.swift,
+				iDineUITestsLaunchTests.swift,
+			);
+			target = CEB6117C2F0C939C006836F7 /* iDineUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CEB611682F0C939A006836F7 /* iDine */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CEB6127B2F0C93EB006836F7 /* Exceptions for "iDine" folder in "iDine" target */,
+				CEB6127C2F0C93EB006836F7 /* Exceptions for "iDine" folder in "iDineUITests" target */,
+			);
 			path = iDine;
 			sourceTree = "<group>";
 		};

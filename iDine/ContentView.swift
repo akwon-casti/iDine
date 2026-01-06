@@ -8,12 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
+
+    var body: some View { // required by the protocol
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            NavigationStack {
+                List {
+                    ForEach(menu) { section in
+                        // contextual type for closure argument refers to parameters it should accept and return
+                        Text("Hello, world!")
+                        Text("Hello, world!")
+                        Text("Hello, world!")
+                    }
+                }
+                .navigationTitle("Menu")
+            }
         }
         .padding()
     }
