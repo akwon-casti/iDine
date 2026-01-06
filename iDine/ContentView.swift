@@ -19,12 +19,14 @@ struct ContentView: View {
                 List {
                     ForEach(menu) { section in
                         // contextual type for closure argument refers to parameters it should accept and return
-                        Text("Hello, world!")
-                        Text("Hello, world!")
-                        Text("Hello, world!")
+                        Section(section.name) {
+                            ForEach(section.items) { item in
+                                Text(item.name)
+                            }
+                        }
                     }
                 }
-                .navigationTitle("Menu")
+                .navigationTitle("Menu").listStyle(.grouped)
             }
         }
         .padding()
